@@ -1,0 +1,57 @@
+@import "abstracts/functions";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+
+@import "layouts/grid";
+@import "layouts/header";
+
+@import "pages/home";
+/*
+    COLORS
+    Light Green : #7ed56f;
+    Medium Green : #55c57a;
+    Dark Green : #28b485;
+ */
+
+.heading-primary{
+  color: $color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 40px;
+
+  &--main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveInLeft 2s ease-out;
+  }
+
+  &--sub{
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 17.5px;
+    animation : moveInRight 2s ease-out;
+  }
+
+}
+
+
+
+
+
+
+
+
+
