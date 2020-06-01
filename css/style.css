@@ -365,7 +365,28 @@ body {
   background-color: #ffffff;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  padding: 6rem; }
+  padding: 6rem 6rem 6rem 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-10deg); }
+  /* line 10, sass/components/_story.scss */
+  .story > * {
+    transform: skewX(10deg); }
+  /* line 13, sass/components/_story.scss */
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(10deg); }
+  /* line 23, sass/components/_story.scss */
+  .story__text {
+    transform: skewX(10deg); }
+  /* line 26, sass/components/_story.scss */
+  .story__image {
+    height: 100%; }
 
 /* line 1, sass/layouts/_grid.scss */
 .row {
