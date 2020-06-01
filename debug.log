@@ -88,3 +88,7 @@
 [0229/225254.189:ERROR:crash_report_database_win.cc(445)] failed to read records
 [0308/231006.911:ERROR:file_io.cc(89)] ReadExactly: expected 112, observed 0
 [0308/231007.395:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0508/043703.766:ERROR:file_io.cc(89)] ReadExactly: expected 112, observed 0
+[0508/043703.767:ERROR:crash_report_database_win.cc(445)] failed to read records
+[0528/190141.839:ERROR:file_io.cc(89)] ReadExactly: expected 112, observed 0
+[0528/190141.938:ERROR:crash_report_database_win.cc(445)] failed to read records
