@@ -126,7 +126,7 @@ body {
   .bg-video__content {
     height: 100%;
     width: 100%;
-    object-fit: fill; }
+    object-fit: cover; }
 
 /* line 2, sass/components/_button.scss */
 .button:link, .button:visited {
@@ -378,7 +378,7 @@ body {
 .story {
   width: 75%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   padding: 6rem 6rem 6rem 9rem;
@@ -402,8 +402,9 @@ body {
   .story__image {
     height: 100%;
     transform: translateX(-3.5rem) scale(1.3);
-    transition: all .5s ease; }
-  /* line 32, sass/components/_story.scss */
+    transition: all .5s ease;
+    object-fit: cover; }
+  /* line 33, sass/components/_story.scss */
   .story__caption {
     position: absolute;
     top: 50%;
@@ -415,13 +416,14 @@ body {
     color: #ffffff;
     opacity: 0;
     transition: all .5s ease; }
-  /* line 44, sass/components/_story.scss */
+  /* line 45, sass/components/_story.scss */
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
-  /* line 48, sass/components/_story.scss */
+  /* line 49, sass/components/_story.scss */
   .story:hover .story__image {
-    transform: translateX(-3.5rem) scale(1.1); }
+    transform: translateX(-3.5rem) scale(1.1);
+    object-fit: cover; }
 
 /* line 1, sass/layouts/_grid.scss */
 .row {
@@ -515,6 +517,21 @@ body {
 .section_stories {
   position: relative;
   padding: 15rem 0; }
+
+/* line 30, sass/pages/_home.scss */
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+/* line 35, sass/pages/_home.scss */
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../img/img-2.png");
+  background-size: 100%;
+  height: 50rem; }
+  /* line 40, sass/pages/_home.scss */
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
 
 /*
     COLORS
